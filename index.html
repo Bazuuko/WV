@@ -13,7 +13,76 @@
 </head>
 <body class="h-full bg-gray-700" style="background-color:#101211">
 
+<div className="nav" style={{display:"flex"}}> 
 
+<div className="logo" 
+                style={{
+                textAlign: "center",
+                fontSize: 20,
+                fontWeight: "bold",
+                padding: 50,
+                letterSpacing: 2,
+                color: "var(--accent-text)",
+                marginTop: "-10px",
+              }}
+            >
+              Shibarium Punks
+          </div>
+          
+          <div className="bar" style={{display:"flex", marginLeft: "600px"}}>
+          <div className="option1" onClick={handleAbout}>
+          <s.TextNav
+            style={{
+                textAlign: "center",
+                fontSize: 20,
+                fontWeight: "bold",
+                padding: 50,
+                letterSpacing: 2,
+                color: "var(--accent-text)",
+                marginTop: "-10px",
+                cursor: "pointer"
+              }}
+            >
+              About
+       </s.TextNav>
+          </div>
+
+          <div className="option2" style={{marginLeft:"0px"}}>
+          <s.TextNav
+            style={{
+                textAlign: "center",
+                fontSize: 20,
+                fontWeight: "bold",
+                padding: 50,
+                letterSpacing: 2,
+                color: "var(--accent-text)",
+                marginTop: "-10px",
+              }}
+            >
+              Marketplace
+       </s.TextNav>
+          </div>
+
+          <div className="option3" style={{marginLeft:"0px"}} onClick={handleFaq}>
+          <s.TextNav
+            style={{
+                textAlign: "center",
+                fontSize: 20,
+                fontWeight: "bold",
+                padding: 50,
+                letterSpacing: 2,
+                color: "var(--accent-text)",
+                marginTop: "-10px",
+                cursor: "pointer"
+              }}
+            >
+              FAQ
+       </s.TextNav>
+          </div>
+          </div>  
+       </div>
+
+</div>
   <main class="p-10 flex justify-center min-h-full">
     <div class="w-4/5">
       <div class="mb-10">
