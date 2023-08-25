@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const web3 = new Web3(window.ethereum)
 
   document.getElementById("load_button").addEventListener("click", async () => {
-    const contract = new web3.eth.Contract(abi, "0xa3341a3dac5685d83729de35e43d3e8e587c3257")
+    const contract = new web3.eth.Contract(abi, "0x258B201aF9FFC942cA880597975CA3D3daaD5966")
     const walletAddress = document.getElementById("wallet_address").value
     contract.defaultAccount = walletAddress
     const spacePunksBalance = await contract.methods.balanceOf(walletAddress).call()
